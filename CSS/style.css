@@ -7,6 +7,11 @@
 
 .navbar{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0px;
+    cursor: pointer;
 }
 
 .leftNav{
@@ -20,6 +25,7 @@
     width : 50%;
     /* background-color: yellow; */
     text-align: right;
+    padding: 0px 23px;
 }
 
 .logo{
@@ -43,6 +49,7 @@
 .leftNav li a{
     text-decoration: none;
     color : white;
+    font-family: 'Georama', sans-serif;
 }
 leftNav li a:hover{
     color:grey;
@@ -56,7 +63,146 @@ leftNav li a:hover{
 }
 
 .background{
-    background: rgba(0,0,0,0.7) url(../IMG/background.webp);
+    background: rgba(0,0,0,0.7) url(../IMG/bg.jpeg);
     background-size: cover;
     background-blend-mode:  darken;
+}
+
+.firstSection{
+    height:100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width : 50%;
+    margin: auto;
+}
+
+.first-half{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+}
+
+.second-half{
+    width : 30%;
+}
+
+.second-half img{
+    width : 70%;
+    border : 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin:auto;
+}
+
+.text-big{
+    font-size: 32px;
+    font:bold;
+    padding: 20px;
+    font-family: 'Georama', sans-serif;
+}
+
+.text-small{
+    font-size:18px;
+    font-family: 'Georama', sans-serif;
+}
+
+.btn{
+    padding: 4px 20px;
+    margin: 12px 0px;
+    border: 3px solid white;
+    border-radius: 14px;
+    /* font-size:14px; */
+    background: none;
+    color:white;
+    cursor: pointer;
+    font-family: 'Georama', sans-serif;
+}
+
+.btn-sm{
+    padding:6px 10px;
+    vertical-align: middle;
+}
+
+.section{
+    height : 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin : auto;
+    font-family: 'Georama', sans-serif;
+}
+
+.sectionTag{
+   padding: 10px 0px;
+}
+
+.left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0px 30px;
+}
+
+.thumbnail img{
+    width  : 200px;
+    border : 2px solid black;
+    border-radius:13px;
+    margin-top: 16px;
+}
+
+/* contact-section */
+#contact{
+    position : relative;
+}
+#contact::before{
+    content: "";
+    background:url('../IMG/contact.jpg') no-repeat center center/cover;  
+    position: absolute;
+    top : 0px;
+    left : 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Georama', sans-serif;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding : 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+.center{
+    text-align:center;
+}
+/* footer */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
 }
